@@ -18,7 +18,7 @@ function GeneralInformation(){
             <div className="general-information">
 
                 <div className="image-container">
-                    <img src="../../public/What-is-Stock-Photography_P1_mobile.webp"/>
+                    <img src="../../public/stock.webp"/>
                 </div>
                 <div className="button-container">
                     <CreateButton buttonText="Edit/Submit" eventCallback={editGeneralInfo}/>
