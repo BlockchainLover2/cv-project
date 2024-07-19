@@ -1,5 +1,6 @@
 import {CreateButton, CreateFormElement, CreateFormElementReadOnly} from "./FormHelper.jsx";
 import {useState} from "react";
+import img from "../stock.webp"
 
 function GeneralInformation(){
 
@@ -18,7 +19,7 @@ function GeneralInformation(){
             <div className="general-information">
 
                 <div className="image-container">
-                    <img src="../../public/stock.webp"/>
+                    <img src={img} alt="profile-pic"/>
                 </div>
                 <div className="button-container">
                     <CreateButton buttonText="Edit/Submit" eventCallback={editGeneralInfo}/>
