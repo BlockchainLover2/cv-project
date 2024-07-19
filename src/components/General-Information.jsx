@@ -31,7 +31,7 @@ function GeneralInformation(){
                             <CreateFormElement state={pn} labelText={"Phone Number"} id={"pn"}/>
                     </form>
                 ) : (
-                    <form>
+                    <form className={"non-justify"}>
                         <CreateFormElementReadOnly text={name[0]} labelText={"Name"} id={"name"}/>
                         <CreateFormElementReadOnly text={email[0]} labelText={"Email"} id={"email"}/>
                         <CreateFormElementReadOnly text={pn[0]} labelText={"Phone Number"} id={"pn"}/>
