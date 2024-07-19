@@ -17,7 +17,7 @@ class SchoolInfo{
 }
 
 
-const schoolInfoArray = [new SchoolInfo("dgfdfg","0,","")]
+const schoolInfoArray = [new SchoolInfo()]
 
 function SchoolInformation(){
     const [schoolIndex,setIndex] = useState(0)
