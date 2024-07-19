@@ -1,0 +1,140 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+#root {
+  height: 100vh;
+  width: 100%;
+  background: #1e9678;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container{
+  background: #0a5c47;
+  width: 95%;
+  height: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2,minmax(0,1fr));
+  box-shadow: #0a5c47 0 0 20px 20px;
+}
+
+
+
+.general-information,.school-information,.work-information{
+  border: solid black;
+}
+
+.work-information{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 9fr 1fr;
+
+  .form-information{
+    width: 80%;
+  }
+}
+
+form{
+  overflow: auto;
+  height: 100%;
+}
+
+button{
+  transition: transform 0.5s;
+  width: 90%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.school-information{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 9fr 1fr;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: transform 1s;
+}
+
+.non-justify{
+  justify-content: initial;
+}
+.hidden{
+  visibility: hidden;
+}
+
+
+.general-information{
+  display: grid;
+  grid-row: span 2;
+  grid-template: 1fr 1fr / 10fr 1fr;
+  >.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      aspect-ratio: 1/1;
+      width: 40%;
+      transition: transform 0.2s;
+    }
+    img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+  }
+  .button-container{
+    grid-row: span 2;
+  }
+  >form{
+    grid-row-start: 2;
+  }
+
+}
+
+
+.label-text{
+  color: black;
+  font-weight: bold;
+}
+
+.form-information{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  width: 50%;
+  input{
+    font-size: 1.5rem;
+    height: 2rem;
+    transition: transform 0.4s ;
+  }
+  input:focus{
+    transform: scale(1.1);
+  }
+}
+
